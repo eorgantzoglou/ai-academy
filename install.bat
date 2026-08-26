@@ -47,7 +47,7 @@ if not exist "%DEST%" (
 )
 
 echo   Copying files...
-robocopy "%SRC%" "%DEST%" /E /NFL /NDL /NJH /NJS /NP /XD ".git" "node_modules" ".github" /XF "*.lnk" >nul
+robocopy "%SRC%" "%DEST%" /E /NFL /NDL /NJH /NJS /NP /XD ".git" "node_modules" ".github" /XF "*.lnk" ".gitignore" ".gitattributes" >nul
 if errorlevel 8 (
   echo   ERROR: copying the files failed.
   goto :fail
