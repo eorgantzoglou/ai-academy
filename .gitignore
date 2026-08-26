@@ -1,0 +1,15 @@
+# Windows shell debris
+Thumbs.db
+desktop.ini
+*.lnk
+
+# local Python / Node scratch
+__pycache__/
+*.pyc
+.venv/
+venv/
+node_modules/
+
+# editor
+.vscode/
+.idea/

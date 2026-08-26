@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Academy — The Bible of Data Science &amp; AI</title>
+<link rel="icon" type="image/png" sizes="256x256" href="assets/icon-256.png">
+<link rel="icon" type="image/png" sizes="64x64" href="assets/icon-64.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="app">
+
+  <!-- ============ SIDEBAR ============ -->
+  <aside id="sidebar">
+    <div class="brand" data-nav="home">
+      <div class="brand-mark">AI</div>
+      <div class="brand-text">
+        <strong>AI Academy</strong>
+        <span>Data Science · ML · DL · CV</span>
+      </div>
+    </div>
+
+    <div class="side-search">
+      <input id="sideSearch" type="search" placeholder="Search topics…  (press /)" autocomplete="off">
+    </div>
+
+    <nav id="trackNav" class="track-nav"><!-- built by app.js --></nav>
+
+    <div class="side-foot">
+      <div class="progress-global">
+        <div class="pg-row"><span>Overall progress</span><span id="pgPct">0%</span></div>
+        <div class="bar"><i id="pgBar" style="width:0%"></i></div>
+        <div class="pg-sub"><span id="pgCount">0 / 0 lessons</span></div>
+      </div>
+      <div class="side-actions">
+        <button id="themeBtn" class="ghost-btn" title="Toggle light / dark">◐ Theme</button>
+        <button id="resetBtn" class="ghost-btn" title="Reset all progress">↺ Reset</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ============ MAIN ============ -->
+  <main id="main">
+    <header id="topbar">
+      <button id="menuBtn" class="icon-btn" aria-label="Menu">☰</button>
+      <div id="crumbs" class="crumbs"></div>
+      <div class="top-right">
+        <button id="prevBtn" class="icon-btn" title="Previous lesson">‹</button>
+        <button id="nextBtn" class="icon-btn" title="Next lesson">›</button>
+      </div>
+    </header>
+
+    <div id="view" class="view"><!-- rendered --></div>
+
+    <footer id="footer">
+      <span>AI Academy · built to be read start-to-finish, or dipped into anywhere.</span>
+    </footer>
+  </main>
+
+  <div id="scrim"></div>
+</div>
+
+<!-- rendering engine -->
+<script src="js/render.js"></script>
+
+<!-- curriculum content -->
+<script src="js/curriculum/01-foundations.js"></script>
+<script src="js/curriculum/02-python-toolkit.js"></script>
+<script src="js/curriculum/03-math.js"></script>
+<script src="js/curriculum/04-data-engineering.js"></script>
+<script src="js/curriculum/05-regression.js"></script>
+<script src="js/curriculum/06-classification.js"></script>
+<script src="js/curriculum/07-unsupervised.js"></script>
+<script src="js/curriculum/08-model-eval.js"></script>
+<script src="js/curriculum/09-deep-learning.js"></script>
+<script src="js/curriculum/10-cnn.js"></script>
+<script src="js/curriculum/11-computer-vision.js"></script>
+<script src="js/curriculum/12-sequences.js"></script>
+<script src="js/curriculum/13-transformers-nlp.js"></script>
+<script src="js/curriculum/14-generative.js"></script>
+<script src="js/curriculum/15-ai-fundamentals.js"></script>
+<script src="js/curriculum/16-mlops.js"></script>
+<script src="js/curriculum/17-projects.js"></script>
+
+<!-- application -->
+<script src="js/app.js"></script>
+</body>
+</html>
